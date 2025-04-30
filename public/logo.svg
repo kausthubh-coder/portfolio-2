@@ -1,0 +1,6 @@
+<svg width="300" height="350" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- K letter -->
+  <path d="M50 50h40v90l60-90h50l-70 100 75 100h-55l-60-80V250h-40V50z" fill="currentColor"/>
+  <!-- N letter -->
+  <path d="M50 150h40v47.5l60-47.5h50l-110 87.5V300h-40V150z" fill="currentColor"/>
+</svg> 

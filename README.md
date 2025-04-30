@@ -1,24 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kaustav Nag's Portfolio
+
+A sleek, modern, black and white portfolio website with micro interactions and animations.
+
+## Features
+
+- Responsive design that works on all devices
+- Dark/light mode support based on system preferences
+- Interactive animated background with particle effect
+- Smooth scrolling and page transitions
+- Micro-interactions for user engagement
+- Section-based layout for easy navigation
+- Modern, minimalist aesthetic
+
+## Technologies Used
+
+- Next.js 15
+- React 19
+- TypeScript
+- TailwindCSS 4
+- Canvas API for animations
+- Intersection Observer API for scroll animations
+
+## Sections
+
+- **Hero** - Eye-catching introduction with animated elements
+- **About** - Detailed bio with goal, vision, and values
+- **Projects** - Showcase of featured projects with hover effects
+- **Skills** - Interactive skill cards with categorization
+- **Contact** - Contact form with validation and animations
+- **Footer** - Site navigation and social links
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Building for Production
+
+```bash
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All rights reserved © Kaustav Nag
 
 ## Learn More
 
