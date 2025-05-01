@@ -24,10 +24,12 @@ export default function About() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+
+    if (currentSectionRef) observer.observe(currentSectionRef);
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentSectionRef) observer.unobserve(currentSectionRef);
     };
   }, []);
 
@@ -100,7 +102,7 @@ export default function About() {
             >
               <h3 className="text-xl font-semibold mb-4">Elevator Pitch</h3>
               <p className="leading-relaxed">
-                I'm a full-stack developer with a strong focus on AI. I build scalable, user-friendly applications using technologies like React, Python, and FastAPI. My entrepreneurial background allows me to understand market needs and deliver products quickly. I created Studi.ink, an AI-powered tool to help students maximize productivity on Canvas by generating study materials through intelligent agents.
+                I&apos;m a full-stack developer with a strong focus on AI. I build scalable, user-friendly applications using technologies like React, Python, and FastAPI. My entrepreneurial background allows me to understand market needs and deliver products quickly. I created Studi.ink, an AI-powered tool to help students maximize productivity on Canvas by generating study materials through intelligent agents.
               </p>
             </div>
 
@@ -111,10 +113,10 @@ export default function About() {
               <h3 className="text-xl font-semibold mb-4">Brand Image</h3>
               <div className="flex flex-col gap-3">
                 <p className="leading-relaxed">
-                  <strong>Tagline:</strong> "Empowering through AI and Fast Innovation"
+                  <strong>Tagline:</strong> &quot;Empowering through AI and Fast Innovation&quot;
                 </p>
                 <p className="leading-relaxed">
-                  <strong>Logo:</strong> The "K" and "N" stacked vertically, representing growth and simplicity. Bold purple tones convey creativity and boldness.
+                  <strong>Logo:</strong> The &quot;K&quot; and &quot;N&quot; stacked vertically, representing growth and simplicity. Bold purple tones convey creativity and boldness.
                 </p>
                 <p className="leading-relaxed">
                   <strong>Statement:</strong> The logo embodies simplicity and innovation, reflecting my commitment to developing clear, impactful solutions through AI and full-stack development.

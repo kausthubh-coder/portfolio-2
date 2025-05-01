@@ -33,10 +33,10 @@ export default function Skills() {
           if (entry.isIntersecting) {
             if (entry.target === sectionRef.current && skillsRef.current) {
               const skills = skillsRef.current.querySelectorAll('.skill-item');
-              skills.forEach((skill, index) => {
+              skills.forEach((skill, i) => {
                 setTimeout(() => {
                   skill.classList.add('scale-in');
-                }, index * 50);
+                }, i * 50);
               });
             }
           }
@@ -45,10 +45,12 @@ export default function Skills() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+
+    if (currentSectionRef) observer.observe(currentSectionRef);
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentSectionRef) observer.unobserve(currentSectionRef);
     };
   }, []);
 
@@ -76,7 +78,7 @@ export default function Skills() {
         </div>
         
         <div ref={skillsRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div 
               key={skill.name}
               className="skill-item opacity-0 bg-background p-4 rounded-lg border border-foreground/10 flex flex-col items-center justify-center text-center gap-2 hover-lift cursor-pointer transition-all duration-300 hover:border-foreground/30"

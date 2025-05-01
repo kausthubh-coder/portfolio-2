@@ -54,10 +54,12 @@ export default function Contact() {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+
+    if (currentSectionRef) observer.observe(currentSectionRef);
 
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentSectionRef) observer.unobserve(currentSectionRef);
     };
   }, []);
 
@@ -71,7 +73,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out and I'll get back to you as soon as possible.
+              I&apos;m always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out and I&apos;ll get back to you as soon as possible.
             </p>
             
             <div className="space-y-4 mb-6">

@@ -19,14 +19,18 @@ export default function Hero() {
       { threshold: 0.1 }
     );
 
-    if (titleRef.current) observer.observe(titleRef.current);
-    if (subtitleRef.current) observer.observe(subtitleRef.current);
-    if (ctaRef.current) observer.observe(ctaRef.current);
+    const currentTitleRef = titleRef.current;
+    const currentSubtitleRef = subtitleRef.current;
+    const currentCtaRef = ctaRef.current;
+
+    if (currentTitleRef) observer.observe(currentTitleRef);
+    if (currentSubtitleRef) observer.observe(currentSubtitleRef);
+    if (currentCtaRef) observer.observe(currentCtaRef);
 
     return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-      if (subtitleRef.current) observer.unobserve(subtitleRef.current);
-      if (ctaRef.current) observer.unobserve(ctaRef.current);
+      if (currentTitleRef) observer.unobserve(currentTitleRef);
+      if (currentSubtitleRef) observer.unobserve(currentSubtitleRef);
+      if (currentCtaRef) observer.unobserve(currentCtaRef);
     };
   }, []);
 
