@@ -199,7 +199,7 @@ export default function AnimatedBackground() {
         cancelAnimationFrame(animationFrameId.current);
       }
     };
-  }, [render]);
+  }, [render, speedMultiplier, isDarkMode]);
 
   return (
     <canvas
