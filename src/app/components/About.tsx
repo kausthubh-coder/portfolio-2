@@ -113,10 +113,10 @@ export default function About() {
               <h3 className="text-xl font-semibold mb-4">Brand Image</h3>
               <div className="flex flex-col gap-3">
                 <p className="leading-relaxed">
-                  <strong>Tagline:</strong> &ldquo;Empowering through AI and Fast Innovation&rdquo;
+                  <strong>Tagline:</strong> &quot;Empowering through AI and Fast Innovation&quot;
                 </p>
                 <p className="leading-relaxed">
-                  <strong>Logo:</strong> The &ldquo;K&rdquo; and &ldquo;N&rdquo; stacked vertically, representing growth and simplicity. Bold purple tones convey creativity and boldness.
+                  <strong>Logo:</strong> The &quot;K&quot; and &quot;N&quot; stacked vertically, representing growth and simplicity. Bold purple tones convey creativity and boldness.
                 </p>
                 <p className="leading-relaxed">
                   <strong>Statement:</strong> The logo embodies simplicity and innovation, reflecting my commitment to developing clear, impactful solutions through AI and full-stack development.
